@@ -1,6 +1,6 @@
 # remote_control2 
 
-Firmware, KiCAD files, 3D designes of an embedded STM32 based device I was commissioned to create for an autonomous bike.
+Firmware, KiCAD files, 3D designes of an embedded STM32 based device I was commissioned to create for an autonomous bike. **Clone with --recursive**
 It reads receives stick positions from a hobby remote control (FrSky based) and controls various actors around the bike. Also serves as a CANopen bus master, monitoring for timeouts and handling some safety aspects.   
 The firmware is fully unit tested and fuzzed using American Fuzzy Lop. 
 
