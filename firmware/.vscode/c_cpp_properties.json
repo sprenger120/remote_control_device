@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/stm32_project_base/inc",
+                "${workspaceFolder}/stm32_project_base/chip",
+                "${workspaceFolder}/remote_control_device.cubemx/Core/Inc",
+                "${workspaceFolder}/remote_control_device.cubemx/Drivers/STM32F3xx_HAL_Driver/Inc",
+                "${workspaceFolder}/remote_control_device.cubemx/Drivers/STM32F3xx_HAL_Driver/Inc/Legacy",
+                "${workspaceFolder}/remote_control_device.cubemx/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "${workspaceFolder}/remote_control_device.cubemx/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+                "${workspaceFolder}/remote_control_device.cubemx/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
+                "${workspaceFolder}/remote_control_device.cubemx/Drivers/CMSIS/Device/ST/STM32F3xx/Include",
+                "${workspaceFolder}/remote_control_device.cubemx/Drivers/CMSIS/Include",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/canopen_stack_canfestival/include",
+                "${workspaceFolder}/src/CanFestival",
+                "${workspaceFolder}/canopen_stack_canfestival/hippomocks/HippoMocks",
+                "${workspaceFolder}/objectDictionary",
+                "${workspaceFolder}/span/include"
+            ],
+            "defines": [
+                "${STM32_FAMILY}",
+                "USE_HAL_DRIVER",
+                "STM32F302x8",
+                "DEBUG_ERR_CONSOLE_ON",
+                "BUILDCONFIG_EMBEDDED_BUILD"
+            ],
+            "compilerPath": "/home/sprenger/Tools/gcc-arm-none-eabi-9-2020-q2-update/bin/arm-none-eabi-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

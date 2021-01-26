@@ -1,0 +1,8 @@
+(module nucleo64 (layer F.Cu) (tedit 5D46C4CC)
+  (fp_text reference REF** (at 50.31 -57.57) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value nucleo64 (at 54.39 -51.64) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

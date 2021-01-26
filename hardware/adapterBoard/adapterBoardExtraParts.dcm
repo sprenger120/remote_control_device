@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HCPL062N
+D 3.3V Dual Channel High Speed-10 MBit/s Logic Gate Optocouplers
+K opto coupler
+$ENDCMP
+#
+#End Doc Library

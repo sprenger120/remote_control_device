@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MCU_Module)(type Legacy)(uri ${KIPRJMOD}/footprints/MCU_Module.lib)(options "")(descr ""))
+  (lib (name adapterBoardExtraParts)(type Legacy)(uri /media/sprenger/Stick/RavEBike/remote_control2/hardware/adapterBoard/adapterBoardExtraParts.lib)(options "")(descr ""))
+)

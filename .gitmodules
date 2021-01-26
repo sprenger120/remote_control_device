@@ -1,0 +1,9 @@
+[submodule "firmware/canfestival"]
+	path = firmware/canfestival
+	url = git@github.com:sprenger120/canfestival.git
+[submodule "firmware/fuzzing/AFL"]
+	path = firmware/fuzzing/AFL
+	url = https://github.com/google/AFL.git
+[submodule "firmware/span"]
+	path = firmware/span
+	url = https://github.com/tcbrindle/span.git
