@@ -88,4 +88,4 @@ Do not power up device without antennas attached it may shorten the lifespan of 
 
 ![front image](hardware/pictures/RCD_front.jpg "")
 
-![top without lid](hardware/pictures/RCD_front.jpg "")
+![top without lid](hardware/pictures/RCD_top.jpg "")
