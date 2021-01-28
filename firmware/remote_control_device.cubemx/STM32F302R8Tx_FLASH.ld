@@ -63,7 +63,7 @@ MEMORY
 {
 RAM (xrw)      : ORIGIN = 0x20000000, LENGTH = 16K
 FLASH (rx)      : ORIGIN = 0x8000000, LENGTH = 65528
-fw_crc (rx)      : ORIGIN = 0x800fff8, LENGTH = 8
+fw_hash (rx)      : ORIGIN = 0x800fff8, LENGTH = 8
 }
 
 /* Define output sections */
@@ -175,14 +175,12 @@ SECTIONS
   } >RAM
 
 
-_versioninfo_start_address = 0x800fff8;
-
-.versioninfo _versioninfo_start_address :
-{
-  KEEP(*(.versioninfo)) ;
-} > fw_crc
-  
-
+  .firmwareHash :
+  {
+    . = ALIGN(4);
+    KEEP(*(.firmwareHash)) ;
+  } >fw_hash
+    
   /* Remove information from the standard libraries */
   /DISCARD/ :
   {

@@ -1,7 +1,7 @@
 #pragma once
 #include "BuildConfiguration.hpp"
-#include "Wrapper/HAL.hpp"
 #include "CanFestival/CanFestivalTimers.hpp"
+#include "FirmwareHasher.hpp"
 #include "LEDs.hpp"
 #include "PeripheralDrivers/CanIO.hpp"
 #include "PeripheralDrivers/ReceiverModule.hpp"
@@ -11,6 +11,7 @@
 #include "Statemachine/LEDUpdater.hpp"
 #include "Statemachine/RemoteControl.hpp"
 #include "Statemachine/Statemachine.hpp"
+#include "Wrapper/HAL.hpp"
 
 #ifdef BUILDCONFIG_EMBEDDED_BUILD
 namespace remote_control_device
@@ -21,6 +22,7 @@ public:
     Application();
 
     void run();
+
 private:
     wrapper::HAL _hal;
     TerminalIO _terminalIO;
@@ -35,6 +37,8 @@ private:
     LED _ledRc;
     LEDUpdater _ledUpdater;
     Statemachine _stateMachine;
+
+    FirmwareHasher _fwHash;
 };
 } // namespace remote_control_device
 #endif

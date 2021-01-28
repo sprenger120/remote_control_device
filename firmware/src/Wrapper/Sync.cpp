@@ -17,7 +17,7 @@ void waitForOne(EventBits_t events)
 void waitForEveryone()
 {
     EventBits_t events = CanIO_Ready | ReceiverModule_Ready | TerminalIO_Ready |
-                         Statemachine_Ready | CanfestivalTimers_Ready;
+                         Statemachine_Ready | CanfestivalTimers_Ready | FirmwareHasher_Ready;
 
     (void)xEventGroupWaitBits(syncEventGroup, events, pdFALSE, pdTRUE, portMAX_DELAY);
 }

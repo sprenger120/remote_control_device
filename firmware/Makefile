@@ -42,7 +42,8 @@ SOURCES         := $(CANFESTIVAL_SRC) \
                    src/LEDs.cpp \
                    src/Wrapper/Sync.cpp \
                    src/Application.cpp \
-                   src/Wrapper/Task.cpp
+                   src/Wrapper/Task.cpp \
+                   src/FirmwareHasher.cpp
 
 
 

@@ -16,6 +16,7 @@
 #include <cstdio>
 #include <functional>
 #include <memory>
+#include "FirmwareHasher.hpp"
 
 namespace remote_control_device
 {
@@ -232,6 +233,12 @@ void Statemachine::drawUI()
         term.write(buff);
         term.write("\r\n");
     }
+
+    term.write("Successful firmware hashes: ");    
+    snprintf(buff, buffSize, "%lu", FirmwareHasher::successfulHashes);
+    term.write(buff);
+    term.write("\r\n");
+
 
     // Monitored Devices, state controlled devices
     _canopen.drawUIDevicesPart(term);

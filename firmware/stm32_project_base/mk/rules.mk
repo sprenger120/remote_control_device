@@ -58,7 +58,8 @@ print-%:
 
 %.bin:	%.elf
 	@printf "  OBJCOPY $@\n"
-	$(Q)$(OBJCOPY) -Obinary $< $@
+	$(Q)$(OBJCOPY) -Obinary --gap-fill 0xFF $< $@
+	$(BASEDIR)FirmwareHashInserter.py $@
 
 %.list: %.elf
 	@printf "  OBJDUMP $@\n"
