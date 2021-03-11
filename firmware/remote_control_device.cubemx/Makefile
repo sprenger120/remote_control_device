@@ -149,6 +149,15 @@ LDSCRIPT = STM32F302R8Tx_FLASH.ld
 
 
 # default action: build all
+export:
+	@printf 'set(MakeExport_C_SOURCES "$(C_SOURCES)")\n'
+	@printf 'set(MakeExport_ASM_SOURCES "$(ASM_SOURCES)")\n'
+	@printf 'set(MakeExport_MCU $(MCU))\n'
+	@printf 'set(MakeExport_AS_DEFS "$(AS_DEFS)")\n'
+	@printf 'set(MakeExport_C_DEFS "$(C_DEFS)")\n'
+	@printf 'set(MakeExport_AS_INCLUDES "$(AS_INCLUDES)")\n'
+	@printf 'set(MakeExport_C_INCLUDES "$(C_INCLUDES)")\n'
+	@printf 'set(MakeExport_LDSCRIPT $(LDSCRIPT))\n'
 
 
 #######################################

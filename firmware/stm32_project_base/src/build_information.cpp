@@ -6,13 +6,13 @@
 #define BUILD_INFO_IS_DEBUG false
 #endif
 
-#ifndef BUILDCONFIG_EMBEDDED_BUILD
+//#ifndef BUILDCONFIG_EMBEDDED_BUILD
 #define BUILD_INFO_COMMIT_SHORT 0
 #define BUILD_INFO_IS_DIRTY 0
 #define BUILD_INFO_TIME "testing_time"
 #define BUILD_INFO_COMMIT_LONG "testing_commit"
 #define BUILD_INFO_BRANCH "testing_brach"
-#endif
+//#endif
 
 namespace build_info
 {
